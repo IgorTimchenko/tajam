@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/roboto/Roboto-Light.woff2') format('woff2'),
+        url('fonts/roboto/Roboto-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/roboto/Roboto-Bold.woff2') format('woff2'),
+        url('fonts/roboto/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+/* атомарные классы */
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+.gradient {
+    background: rgba(44, 26, 88, 0.8);
+    display: flex;
+    width: 100%;
+}
+.block {
+    padding: 70px 0px;
+}
+.bimg {
+    width: 100%;
+    display: block;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    text-decoration: none;
+    border: 1px solid #00e0d0;
+    color: #00e0d0;
+    border-radius: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: transparent;
+    cursor: pointer;
+}
+
+.field {
+    border: 1px solid #e5e5e5;
+    display: block;
+    margin: 25px 0px;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-family: "Playfair Display";
+    margin: 0;
+}
+
+p {
+    font-size: 0.7em;
+    line-height: 19px;
+}
+
+/* основные стили */
+
+header {
+    background: url("images/bg/header.png");
+    padding-top: 15px;
+}
+header .row.c1 {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-bottom: 150px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+nav a:hover {
+    color: #00e0d0;
+}
+
+#our_story .container {
+    display: flex;
+}
+#our_story .descr {
+    flex-grow: 1;
+}
+#our_story img .preview {
+    margin: 0px 100px 0px 60px;
+}
+
+#watch_our_story {
+    background: url(images/bg/watch_our_story.jpg);
+    height: 550px;
+    display: flex;
+}
+#watch_our_story .play {
+    margin: auto;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+#expertise .inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+#expertise .inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+#expertise .item {
+   /*width: 33.33%;*/
+    padding: 35px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #ebebeb;
+}
+
+#amazing_team {
+    background: url("images/bg/team.png");
+    text-align: center;
+}
+#amazing_team .inner {
+    display: flex;
+    gap: 20px;
+}
+
+#our_works .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#our_works .inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+#our_works .item {
+    display: block;
+    width: 16.66%;
+}
+
+#testimonials {
+    background: url("images/bg/testimonials.png");
+}
+
+#feedback .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+#feedback .col {
+    flex-grow: 1;
+}
+
+footer {
+    background: url("images/bg/footer.png");
+    color: #fff;
+}
+footer .row.c1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+footer .row.c2 .col.c1 a {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+}
+footer .row.c2 .col.c1 a:hover {
+   text-decoration:underline;
+}
+footer .row.c1 .col {
+    width: 33.33%;
+}
+/*
+Относится к expertise
+.inner {
+        padding: 10px;
+        display: flex;
+        width: 900px;
+        flex-wrap: wrap;
+}
+
+.item {
+    padding: 15px;
+    width: 265px;
+    text-align: center;
+}
+
+.item_2 {
+    padding: 15px;
+    width: 265px;
+    text-align: center;
+}*/
+
