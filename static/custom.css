@@ -32,6 +32,7 @@ body {
     background: rgba(44, 26, 88, 0.8);
     display: flex;
     width: 100%;
+    height: inherit;
 }
 .block {
     padding: 70px 0px;
@@ -77,7 +78,13 @@ p {
 
 header {
     background: url("images/bg/header.png");
+    /* background-size: cover; */
+    height: 670px;
+    background-position: center top;
+}
+header > * {
     padding-top: 15px;
+    box-sizing: border-box;
 }
 header .row.c1 {
     justify-content: space-between;
