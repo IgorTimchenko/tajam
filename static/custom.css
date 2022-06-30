@@ -32,6 +32,7 @@ body {
     background: rgba(44, 26, 88, 0.8);
     display: flex;
     width: 100%;
+    box-sizing: border-box;
     height: inherit;
 }
 .block {
@@ -64,14 +65,44 @@ body {
     box-sizing: border-box;
 }
 
+.title {
+    text-align: center;
+}
+.title .descr {
+    font-family: "Playfair Display";
+    color: #716e78;
+    margin-top: 7px;
+    font-size: 1.15em;
+}
+.title .descr:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #ccc;
+    margin: 15px auto 50px;
+}
+.gradient .descr {
+    color: #fff;
+}
+.gradient .title .descr:after {
+    background-color: rgba(255,255,255,0.2);
+}
+
 h2 {
     font-family: "Playfair Display";
     margin: 0;
+    text-transform: uppercase;
+    color: #413d4b;
+}
+.gradient h2 {
+    color: #fff;
 }
 
 p {
-    font-size: 0.7em;
-    line-height: 19px;
+    font-size: 0.9em;
+    line-height: 23px;
+    color: #716e78;
 }
 
 /* основные стили */
@@ -104,6 +135,10 @@ nav a:hover {
 }
 
 #our_story .container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+/*#our_story .container {
     display: flex;
 }
 #our_story .descr {
@@ -111,7 +146,7 @@ nav a:hover {
 }
 #our_story img .preview {
     margin: 0px 100px 0px 60px;
-}
+}*/
 
 #watch_our_story {
     background: url(images/bg/watch_our_story.jpg);
@@ -145,12 +180,21 @@ nav a:hover {
 
 #amazing_team {
     background: url("images/bg/team.png");
+    color: #fff;
     text-align: center;
 }
 #amazing_team .inner {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+#amazing_team .item {
+    border: 1px solid #fff;
+}
+/*#amazing_team .inner {
     display: flex;
     gap: 20px;
-}
+}*/
 
 #our_works .title {
     display: flex;
